@@ -103,3 +103,20 @@ productH4.textContent = siteContent["main-content"]["product-h4"]
 productText.textContent = siteContent["main-content"]["product-content"]
 
 // Vision
+const vision = document.querySelector('.bottom-content .text-content:nth-child(3)');
+const visionH4 = vision.querySelector('h4')
+const visionText = vision.querySelector('p')
+visionH4.textContent = siteContent["main-content"]["vision-h4"]
+visionText.textContent = siteContent["main-content"]["vision-content"]
+
+
+// Contact Section
+const contact = document.querySelector('.contact');
+const contactH4 = contact.querySelector('h4')
+const address = contact.querySelector('p:nth-of-type(1)')
+const phone = contact.querySelector('p:nth-child(2)')
+const email = contact.querySelector('p:nth-child(3)')
+contactH4.textContent = siteContent["contact"]["contact-h4"]
+address.textContent = siteContent["contact"]["address"]
+phone.["phone"]
+    ["email"]
