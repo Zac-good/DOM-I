@@ -124,3 +124,21 @@ email.textContent = siteContent["contact"]["email"]
 // Footer
 const footer = document.querySelector('footer');
 footer.textContent = siteContent["footer"]["copyright"]
+
+// Added links
+
+// blog
+const blogLink = document.createElement('a')
+blogLink.textContent = 'Blog'
+blogLink.href = "#"
+blogLink.style.color = 'green'
+document.querySelector('nav').prepend(blogLink)
+console.log(blogLink);
+
+// contact
+const contactLink = document.createElement('a')
+contactLink.textContent = 'Contact'
+contactLink.href = '#'
+contactLink.style.color = 'green'
+document.querySelector('nav').appendChild(contactLink)
+
