@@ -114,9 +114,13 @@ visionText.textContent = siteContent["main-content"]["vision-content"]
 const contact = document.querySelector('.contact');
 const contactH4 = contact.querySelector('h4')
 const address = contact.querySelector('p:nth-of-type(1)')
-const phone = contact.querySelector('p:nth-child(2)')
-const email = contact.querySelector('p:nth-child(3)')
+const phone = contact.querySelector('p:nth-of-type(2)')
+const email = contact.querySelector('p:nth-of-type(3)')
 contactH4.textContent = siteContent["contact"]["contact-h4"]
 address.textContent = siteContent["contact"]["address"]
-phone.["phone"]
-    ["email"]
+phone.textContent = siteContent["contact"]["phone"]
+email.textContent = siteContent["contact"]["email"]
+
+// Footer
+const footer = document.querySelector('footer');
+footer.textContent = siteContent["footer"]["copyright"]
